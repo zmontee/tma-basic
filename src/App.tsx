@@ -1,13 +1,13 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import WebApp from '@twa-dev/sdk'
+// import WebApp from '@twa-dev/sdk'
 import CurrenciesList from "./components/CurrenciesList/CurrenciesList.tsx";
 
 function App() {
-    const [count, setCount] = useState(0)
+    // const [count, setCount] = useState(0)
 
     return (
         <>
@@ -29,11 +29,11 @@ function App() {
             {/*    </button>*/}
             {/*</div>*/}
             {/* Here we add our button with alert callback */}
-            <div className="card">
-                <button onClick={() => WebApp.showAlert(`Hello World! Current count is ${count}`)}>
-                    Show Alert
-                </button>
-            </div>
+            {/*<div className="card">*/}
+            {/*    <button onClick={() => WebApp.showAlert(`Hello World! Current count is ${count}`)}>*/}
+            {/*        Show Alert*/}
+            {/*    </button>*/}
+            {/*</div>*/}
         </>
     )
 }
