@@ -1,0 +1,31 @@
+.currencies_list {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.currencies_list h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.currencies_list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.currencies_list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.currencies_list li:last-child {
+  border-bottom: none;
+}
+
+.currencies_list span {
+  font-size: 1em;
+}
