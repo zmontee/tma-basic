@@ -2,7 +2,7 @@ import axios from "axios";
 import {CurrencyDescriptor} from "../types/crassula.ts";
 
 const crassulaAPIInstance = axios.create({
-    baseURL: 'https://client.crassula.io',
+    baseURL: 'https://client.payard.io',
     headers: {
         'Content-Type': 'application/json',
     },
