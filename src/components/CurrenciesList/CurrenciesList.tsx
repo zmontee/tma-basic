@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import styles from './_styles.module.scss';
 import type {CurrencyDescriptor} from "../../types/crassula.ts";
-// import {crassulaAPI} from "../../api/crassula.ts";
+import {crassulaAPI} from "../../api/crassula.ts";
 // import {fakeCurrencies} from "../../utils/constants.ts";
 
 const CurrenciesList = () => {
