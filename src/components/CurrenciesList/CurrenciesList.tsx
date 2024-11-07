@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react';
 import styles from './_styles.module.scss';
-import {CurrencyDescriptor} from "../../types/crassula.ts";
+import type {CurrencyDescriptor} from "../../types/crassula.ts";
 import {crassulaAPI} from "../../api/crassula.ts";
+// import {fakeCurrencies} from "../../utils/constants.ts";
 
 const CurrenciesList = () => {
     const [currencies, setCurrencies] = React.useState<CurrencyDescriptor[]>([]);
@@ -11,16 +12,19 @@ const CurrenciesList = () => {
            setCurrencies(response.data);
            }
        )
+       //  setTimeout(() => {
+       //      setCurrencies(fakeCurrencies)
+       //  }, 1000);
     }, []);
 
     return (
         <div className={styles.currencies_list}>
-            <h2>Currencies</h2>
+            <h2>Crassula Currencies</h2>
             <ul>
                 {currencies.map(currency => (
                     <li key={currency.code}>
                         <span>{currency.code}</span>
-                        <span>{currency.caption}</span>
+                        <span>{currency.name} | {currency.type}</span>
                     </li>
                 ))}
             </ul>

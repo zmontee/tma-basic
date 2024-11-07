@@ -1,8 +1,27 @@
 .currencies_list {
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #213547;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    //padding: 2px;
+    border: 4px solid transparent;
+  }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      padding: 8px;
+        background-color: transparent;
+
+    }
 }
 
 .currencies_list h2 {
@@ -24,8 +43,4 @@
 
 .currencies_list li:last-child {
   border-bottom: none;
-}
-
-.currencies_list span {
-  font-size: 1em;
 }

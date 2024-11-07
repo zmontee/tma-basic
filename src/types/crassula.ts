@@ -4,8 +4,8 @@ export type CurrencyDescriptor = {
     caption: string;
     name: string;
     symbol: string;
-    token: string;
-    tokenVariant: string;
+    token: string | null;
+    tokenVariant: string | null;
     significantDecimals: number;
     decimals: number;
 }
