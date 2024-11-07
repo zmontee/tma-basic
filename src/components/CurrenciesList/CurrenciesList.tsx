@@ -2,19 +2,19 @@ import React, {useEffect} from 'react';
 import styles from './_styles.module.scss';
 import type {CurrencyDescriptor} from "../../types/crassula.ts";
 // import {crassulaAPI} from "../../api/crassula.ts";
-import {fakeCurrencies} from "../../utils/constants.ts";
+// import {fakeCurrencies} from "../../utils/constants.ts";
 
 const CurrenciesList = () => {
     const [currencies, setCurrencies] = React.useState<CurrencyDescriptor[]>([]);
 
     useEffect(() => {
-       // crassulaAPI.getCurrencies().then(response => {
-       //     setCurrencies(response.data);
-       //     }
-       // )
-        setTimeout(() => {
-            setCurrencies(fakeCurrencies)
-        }, 1000);
+       crassulaAPI.getCurrencies().then(response => {
+           setCurrencies(response.data);
+           }
+       )
+       //  setTimeout(() => {
+       //      setCurrencies(fakeCurrencies)
+       //  }, 1000);
     }, []);
 
     return (
